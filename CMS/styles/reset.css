@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+html, body { width:100%; height:100%; }
+
+body { font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:normal; color:#000; cursor:default; }
+
+html, body, p, form, table, input, img, a { margin:0px; padding:0px; text-align:left; line-height:normal; }
+tr, td { margin:0px; padding:0px; text-align:left; line-height:normal; }
+
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td { margin:0; padding:0; }
+
+p, form, span, div, a, font { width:auto; height:auto; }
+
+div, form { display:block; }
+
+span, a, font, input { display:inline; }
+
+fieldset { margin:0; padding:0; border:0 none; }
+
+ol, ul { list-style: none; margin:0px; padding:0px; }
+
+table td { vertical-align:top; }
+
+a { text-decoration:none; color:#333; }
+a img { border:none; vertical-align:top; }
+:focus { outline:0; }
+
+strong { font-weight:bold; }

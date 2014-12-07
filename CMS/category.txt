@@ -1,0 +1,36 @@
+Mobiles
+	Nokia
+	Apple
+	Samsung
+	LG
+	Sony
+	HTC
+	Motorola
+	Other
+Tablets
+Computer
+	Laptop
+	Desktop
+Camera
+	Nikon
+	Sony
+	Samsung
+	Canon
+	Kodak
+	Other
+TV
+	Sony
+	Samsung
+	Panasonic
+	LG
+	Toshiba
+	Sharp
+	Other
+Audio
+	Headphone
+	Speaker
+	Mp3 Player
+Accessories
+	Phone Accessories
+	Tablet Accessories
+	Computer Accessories

@@ -1,0 +1,25 @@
+User-Agent: *
+Allow: /
+Disallow: /search.php*
+Disallow: /css/
+Disallow: /images/
+Disallow: /img/
+Disallow: /index_css/
+Disallow: /index_images/
+Disallow: /index_js/
+Disallow: /js/
+
+User-Agent: Googlebot
+Allow: /
+Disallow: /search.php*
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: exabot
+Disallow: / 
+
+User-agent: Mediapartners-Google
+Disallow:
+
+

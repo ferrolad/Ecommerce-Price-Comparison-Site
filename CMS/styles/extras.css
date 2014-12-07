@@ -1,0 +1,66 @@
+.x-form-item-label {
+	font-weight: bold;
+}
+
+.extras-invalid {
+	color: red !important;
+}
+
+.align-left {
+	text-align: left !important;
+}
+
+.extras-fonted {
+	font: normal normal normal 11px/normal tahoma, arial, helvetica, sans-serif;
+}
+
+.extras-padded {
+	padding: 5px 10px;
+}
+
+.extras-align-right {
+	text-align: right;
+}
+
+.infomessage {
+	float: right;
+	padding: 4px 25px;
+	display: table;
+	margin-right: 10px;
+	background-color: #fcbe54;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+fieldset.x-fieldset {
+    
+}
+
+table.x-table-layout {
+   /* width : 100%; */
+}
+
+
+.adhered-checkbox  {
+    margin-top  :  -0.5em;
+}
+
+.addr-checkbox {
+    padding-left : 100px;
+}
+
+.addr-table {
+    margin:5px;
+    overflow: visible;
+}
+
+.addr-table-cell {
+    padding : 10px;
+}
+
+.category_inactive a span {
+	color: #999;
+}

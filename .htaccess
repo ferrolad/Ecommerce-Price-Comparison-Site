@@ -1,0 +1,163 @@
+Options +FollowSymLinks 
+RewriteEngine on 
+RewriteCond %{HTTP_HOST} ^pricepony.com.ph
+RewriteRule (.*) http://www.pricepony.com.ph/$1 [R=301,L] 
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index.php$ http://www.pricepony.com.ph [R=301,L]
+
+RewriteRule ^$ /index.php [L]
+RewriteRule ^CMS/$ /CMS/homepage.php [L]
+RewriteRule ^subscription.html$ /subscription.php [L]
+RewriteRule ^privacy_policy.html$ /privacy_policy.php [L]
+RewriteRule ^contact.html$ /contact.php [L]
+RewriteRule ^term_condition.html$ /term_condition.php [L]
+
+RewriteRule ^review/([a-z0-9A-Z-/]+)$ /customerReview.php?param=$1 [L]
+RewriteRule ^([a-z0-9A-Z-]+)/([a-z0-9A-Z-/]+).html$ /detail.php?param=$1/$2 [L]
+RewriteRule ^([a-z0-9A-Z-/]+).html$ /detail.php?param=$1 [L]
+
+RewriteRule ^mobile/nokia[/]*$ /search.php?category=Mobiles&subcategory=nokia [L]
+RewriteRule ^mobile/nokia/([^/]+)$ /search.php?category=Mobiles&subcategory=nokia$1 [L]
+RewriteRule ^mobile/apple[/]*$ /search.php?category=Mobiles&subcategory=apple [L]
+RewriteRule ^mobile/apple/([^/]+)$ /search.php?category=Mobiles&subcategory=apple$1 [L]
+RewriteRule ^mobile/samsung[/]*$ /search.php?category=Mobiles&subcategory=samsung [L]
+RewriteRule ^mobile/samsung/([^/]+)$ /search.php?category=Mobiles&subcategory=samsung$1 [L]
+RewriteRule ^mobile/lg[/]*$ /search.php?category=Mobiles&subcategory=lg [L]
+RewriteRule ^mobile/lg/([^/]+)$ /search.php?category=Mobiles&subcategory=lg$1 [L]
+RewriteRule ^mobile/sony[/]*$ /search.php?category=Mobiles&subcategory=sony [L]
+RewriteRule ^mobile/sony/([^/]+)$ /search.php?category=Mobiles&subcategory=sony$1 [L]
+RewriteRule ^mobile/htc[/]*$ /search.php?category=Mobiles&subcategory=htc [L]
+RewriteRule ^mobile/htc/([^/]+)$ /search.php?category=Mobiles&subcategory=htc$1 [L]
+RewriteRule ^mobile/motorola[/]*$ /search.php?category=Mobiles&subcategory=motorola [L]
+RewriteRule ^mobile/motorola/([^/]+)$ /search.php?category=Mobiles&subcategory=motorola$1 [L]
+RewriteRule ^mobile/other-brands[/]*$ /search.php?category=Mobiles&subcategory=Other [L]
+RewriteRule ^mobile/other-brands/([^/]+)$ /search.php?category=Mobiles&subcategory=Other$1 [L]
+RewriteRule ^mobile[/]*$ /search.php?category=Mobiles [L]
+RewriteRule ^mobile/([^/]+)$ /search.php?category=Mobiles$1 [L]
+
+RewriteRule ^tablet[/]*$ /search.php?category=Tablets [L]
+RewriteRule ^tablet/([^/]+)$ /search.php?category=Tablets$1 [L]
+
+RewriteRule ^computer/laptop[/]*$ /search.php?category=Computer&subcategory=Laptop [L]
+RewriteRule ^computer/laptop/([^/]+)$ /search.php?category=Computer&subcategory=Laptop$1 [L]
+RewriteRule ^computer/desktop[/]*$ /search.php?category=Computer&subcategory=Desktop [L]
+RewriteRule ^computer/desktop/([^/]+)$ /search.php?category=Computer&subcategory=Desktop$1 [L]
+RewriteRule ^computer[/]*$ /search.php?category=Computer [L]
+RewriteRule ^computer/([^/]+)$ /search.php?category=Computer$1 [L]
+
+RewriteRule ^camera/nikon[/]*$ /search.php?category=Camera&subcategory=nikon [L]
+RewriteRule ^camera/nikon/([^/]+)$ /search.php?category=Camera&subcategory=nikon$1 [L]
+RewriteRule ^camera/sony[/]*$ /search.php?category=Camera&subcategory=sony [L]
+RewriteRule ^camera/sony/([^/]+)$ /search.php?category=Camera&subcategory=sony$1 [L]
+RewriteRule ^camera/samsung[/]*$ /search.php?category=Camera&subcategory=samsung [L]
+RewriteRule ^camera/samsung/([^/]+)$ /search.php?category=Camera&subcategory=samsung$1 [L]
+RewriteRule ^camera/canon[/]*$ /search.php?category=Camera&subcategory=canon [L]
+RewriteRule ^camera/canon/([^/]+)$ /search.php?category=Camera&subcategory=canon$1 [L]
+RewriteRule ^camera/kodak[/]*$ /search.php?category=Camera&subcategory=kodak [L]
+RewriteRule ^camera/kodak/([^/]+)$ /search.php?category=Camera&subcategory=kodak$1 [L]
+RewriteRule ^camera/other-brands[/]*$ /search.php?category=Camera&subcategory=Other [L]
+RewriteRule ^camera/other-brands/([^/]+)$ /search.php?category=Camera&subcategory=Other$1 [L]
+RewriteRule ^camera[/]*$ /search.php?category=Camera [L]
+RewriteRule ^camera/([^/]+)$ /search.php?category=Camera$1 [L]
+
+RewriteRule ^tv/sony[/]*$ /search.php?category=TV&subcategory=sony [L]
+RewriteRule ^tv/sony/([^/]+)$ /search.php?category=TV&subcategory=sony$1 [L]
+RewriteRule ^tv/samsung[/]*$ /search.php?category=TV&subcategory=samsung [L]
+RewriteRule ^tv/samsung/([^/]+)$ /search.php?category=TV&subcategory=samsung$1 [L]
+RewriteRule ^tv/panasonic[/]*$ /search.php?category=TV&subcategory=panasonic [L]
+RewriteRule ^tv/panasonic/([^/]+)$ /search.php?category=TV&subcategory=panasonic$1 [L]
+RewriteRule ^tv/lg[/]*$ /search.php?category=TV&subcategory=lg [L]
+RewriteRule ^tv/lg/([^/]+)$ /search.php?category=TV&subcategory=lg$1 [L]
+RewriteRule ^tv/toshiba[/]*$ /search.php?category=TV&subcategory=toshiba [L]
+RewriteRule ^tv/toshiba/([^/]+)$ /search.php?category=TV&subcategory=toshiba$1 [L]
+RewriteRule ^tv/sharp[/]*$ /search.php?category=TV&subcategory=sharp [L]
+RewriteRule ^tv/sharp/([^/]+)$ /search.php?category=TV&subcategory=sharp$1 [L]
+RewriteRule ^tv/other-brands[/]*$ /search.php?category=TV&subcategory=Other [L]
+RewriteRule ^tv/other-brands/([^/]+)$ /search.php?category=TV&subcategory=Other$1 [L]
+RewriteRule ^tv[/]*$ /search.php?category=TV [L]
+RewriteRule ^tv/([^/]+)$ /search.php?category=TV$1 [L]
+
+RewriteRule ^audio/headphone[/]*$ /search.php?category=Audio&subcategory=Headphone [L]
+RewriteRule ^audio/headphone/([^/]+)$ /search.php?category=Audio&subcategory=Headphone$1 [L]
+RewriteRule ^audio/speaker[/]*$ /search.php?category=Audio&subcategory=Speaker [L]
+RewriteRule ^audio/speaker/([^/]+)$ /search.php?category=Audio&subcategory=Speaker$1 [L]
+RewriteRule ^audio/mp3-player[/]*$ /search.php?category=Audio&subcategory=Mp3\%20Player [L]
+RewriteRule ^audio/mp3-player/([^/]+)$ /search.php?category=Audio&subcategory=Mp3\%20Player$1 [L]
+RewriteRule ^audio[/]*$ /search.php?category=Audio [L]
+RewriteRule ^audio/([^/]+)$ /search.php?category=Audio$1 [L]
+
+RewriteRule ^accessory/phone-accessories[/]*$ /search.php?category=Accessories&subcategory=Phone\%20Accessories [L]
+RewriteRule ^accessory/phone-accessories/([^/]+)$ /search.php?category=Accessories&subcategory=Phone\%20Accessories$1 [L]
+RewriteRule ^accessory/tablet-accessories[/]*$ /search.php?category=Accessories&subcategory=Tablet\%20Accessories [L]
+RewriteRule ^accessory/tablet-accessories/([^/]+)$ /search.php?category=Accessories&subcategory=Tablet\%20Accessories$1 [L]
+RewriteRule ^accessory/computer-accessories[/]*$ /search.php?category=Accessories&subcategory=Computer\%20Accessories [L]
+RewriteRule ^accessory/computer-accessories/([^/]+)$ /search.php?category=Accessories&subcategory=Computer\%20Accessories$1 [L]
+RewriteRule ^accessory[/]*$ /search.php?category=Accessories [L]
+RewriteRule ^accessory/([^/]+)$ /search.php?category=Accessories$1 [L]
+
+RewriteRule ^women-clothing/shirt[/]*$ /search.php?category=female_fashion&subcategory=shirt [L]
+RewriteRule ^women-clothing/shirt/([^/]+)$ /search.php?category=female_fashion&subcategory=shirt$1 [L]
+RewriteRule ^women-clothing/pants[/]*$ /search.php?category=female_fashion&subcategory=pants [L]
+RewriteRule ^women-clothing/pants/([^/]+)$ /search.php?category=female_fashion&subcategory=pants$1 [L]
+RewriteRule ^women-clothing/shoes[/]*$ /search.php?category=female_fashion&subcategory=shoes [L]
+RewriteRule ^women-clothing/shoes/([^/]+)$ /search.php?category=female_fashion&subcategory=shoes$1 [L]
+RewriteRule ^women-clothing/dress[/]*$ /search.php?category=female_fashion&subcategory=dress [L]
+RewriteRule ^women-clothing/dress/([^/]+)$ /search.php?category=female_fashion&subcategory=dress$1 [L]
+RewriteRule ^women-clothing/accessories[/]*$ /search.php?category=female_fashion&subcategory=accessories [L]
+RewriteRule ^women-clothing/accessories/([^/]+)$ /search.php?category=female_fashion&subcategory=accessories$1 [L]
+RewriteRule ^women-clothing/underwear_swimsuit[/]*$ /search.php?category=female_fashion&subcategory=female_underwear_swimsuit [L]
+RewriteRule ^women-clothing/underwear_swimsuit/([^/]+)$ /search.php?category=female_fashion&subcategory=female_underwear_swimsuit$1 [L]
+RewriteRule ^women-clothing[/]*$ /search.php?category=female_fashion [L]
+RewriteRule ^women-clothing/([^/]+)$ /search.php?category=female_fashion$1 [L]
+
+RewriteRule ^men-clothing/shirt[/]*$ /search.php?category=male_fashion&subcategory=shirt [L]
+RewriteRule ^men-clothing/shirt/([^/]+)$ /search.php?category=male_fashion&subcategory=shirt$1 [L]
+RewriteRule ^men-clothing/pants[/]*$ /search.php?category=male_fashion&subcategory=pants [L]
+RewriteRule ^men-clothing/pants/([^/]+)$ /search.php?category=male_fashion&subcategory=pants$1 [L]
+RewriteRule ^men-clothing/shoes[/]*$ /search.php?category=male_fashion&subcategory=shoes [L]
+RewriteRule ^men-clothing/shoes/([^/]+)$ /search.php?category=male_fashion&subcategory=shoes$1 [L]
+RewriteRule ^men-clothing/accessories[/]*$ /search.php?category=male_fashion&subcategory=accessories [L]
+RewriteRule ^men-clothing/accessories/([^/]+)$ /search.php?category=male_fashion&subcategory=accessories$1 [L]
+RewriteRule ^men-clothing/underwear[/]*$ /search.php?category=male_fashion&subcategory=male_underwear_swimsuit [L]
+RewriteRule ^men-clothing/underwear/([^/]+)$ /search.php?category=male_fashion&subcategory=male_underwear_swimsuit$1 [L]
+RewriteRule ^men-clothing[/]*$ /search.php?category=male_fashion [L]
+RewriteRule ^men-clothing/([^/]+)$ /search.php?category=male_fashion$1 [L]
+
+
+ErrorDocument 404 /404.php
+ErrorDocument 302 /404.php
+ErrorDocument 500 /404.php
+ErrorDocument 401 /404.php
+ErrorDocument 403 /404.php
+
+# compress text, html, javascript, css, xml:
+# AddOutputFilterByType DEFLATE text/plain
+# AddOutputFilterByType DEFLATE text/html
+# AddOutputFilterByType DEFLATE text/xml
+# AddOutputFilterByType DEFLATE text/css
+# AddOutputFilterByType DEFLATE application/xml
+# AddOutputFilterByType DEFLATE application/xhtml+xml
+# AddOutputFilterByType DEFLATE application/rss+xml
+# AddOutputFilterByType DEFLATE application/javascript
+# AddOutputFilterByType DEFLATE application/x-javascript
+
+# Or, compress certain file types by extension:
+<files *.html>
+SetOutputFilter DEFLATE
+</files>
+
+FileETag MTime Size
+<IfModule mod_expires.c>
+  # Enable expirations.
+  ExpiresActive On
+
+  # Cache all files for 2 weeks after access (A).
+  ExpiresDefault A604800
+
+  <FilesMatch \.php$>
+    # Do not allow PHP scripts to be cached unless they explicitly send cache
+    # headers themselves. Otherwise all scripts would have to overwrite the
+    # headers set by mod_expires if they want another caching behavior.
+    ExpiresActive Off
+  </FilesMatch>
+</IfModule>

@@ -1,0 +1,8 @@
+#box #box_MenuLeft ul li{ margin:0px 0px 0 0px; padding:4.1px 2px 5px 10px; }
+#box #box_MenuLeft ul .subMenuLeft { 
+background:url(../img/icon_arrow_grey.png) no-repeat;
+background-position-x: 165px;
+background-position-y: center;
+}
+#box #boxRightAD li{ margin-bottom:11px; padding:0px;}
+

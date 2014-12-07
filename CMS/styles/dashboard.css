@@ -1,0 +1,35 @@
+section, header, footer { display:block; }
+
+.dashboard-container { position:relative; width:320px; height:250px; float:left; margin:0 20px 10px 0; padding:10px; display:block; }
+.dashboard-container header { position:relative; border-bottom:1px solid #cfcfcf; padding:2px 0; margin:2px 0 5px 0; }
+.dashboard-container footer { position:absolute; bottom:0; width:320px; border-top:1px solid #cfcfcf; text-align:center; padding:2px 0; margin:5px 0 0 0; color:#a1a1a1; font-size:10px; }
+.dashboard-container div { padding:2px 0; }
+.dashboard-container h1 { font-size:11px; }
+.dashboard-container .value { float:right;font-weight:bold; }
+.dashboard-container .reload-icon { position:absolute; top:31px; height:210px; width:320px;background:#fff url(/img/ajax-loader.gif) 130px 50px no-repeat; }
+.dashboard-container ul { position:absolute; top:0; right:0; }
+.dashboard-container ul li, .dashboard-container ul li a { float:right; }
+.dashboard-container ul li span { display:none; }
+.dashboard-container ul li { height:16px; width:16px; cursor:pointer; }
+.dashboard-container ul li.reload { background:url(/img/arrow_updown_small.png); }
+
+.dashboard-container .error { margin:4px 0 5px; padding:0 2px; }
+
+.dashboard-container .status { height:16px; width:16px; float:right; }
+.dashboard-container .status .active { background:url(/img/accept.png); height:16px; width:16px; float:right; }
+.dashboard-container .status .inactive { background:url(/img/user_agent_warning.gif); height:16px; width:16px; float:right; }
+
+#shop-kpis #revenue-section,
+#shop-kpis #quantities-section { float:left;width:50%; margin:3px 0 10px 0; }
+#shop-kpis #revenue-section p,
+#shop-kpis #quantities-section p { text-align:center;font-size:12px; font-weight:bold; }
+
+#notifications-container,
+.dashboard-container .scroll,
+#erp-calls-container { height:205px; overflow-y:auto; }
+#notifications .date { width:70px; }
+
+.dashboard-container .scroll .value {margin-right: 10px;}
+
+#order-chart { width:98%; height:340px; }
+#order-chart footer { width:98%; }
